@@ -2,6 +2,9 @@
  * Customized by Lukkian (https://github.com/Lukkian/bootstrap.lukkian/)
  */
 
+// bootstrap v5 disabled negative margins by default, so here we re-enable to maintain v4 compatibility
+$enable-negative-margins: true;
+
 // custom colors
 $cyan: #17a2b8; // using the default value as in bootstrap v4.6.0
 
