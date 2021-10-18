@@ -1,0 +1,48 @@
+{
+  "name": "bootstrap.lukkian",
+  "version": "1.0.0",
+  "description": "My bootstrap customizations.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run css",
+    "css-compile": "npm-run-all --parallel css-compile-expanded css-compile-compressed",
+    "css-compile-compressed": "sass --style compressed --embed-sources --no-error-css scss/bootstrap.scss:dist/css/bootstrap.min.css",
+    "css-compile-expanded": "sass --style expanded --embed-sources --no-error-css scss/:dist/css/",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace dist/css/*.css --use autoprefixer --map",
+    "css": "npm-run-all css-compile css-prefix",
+    "server": "serve --listen 3000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "test": "npm-run-all css-lint css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukkian/bootstrap.lukkian.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Lukkian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lukkian/bootstrap.lukkian/issues"
+  },
+  "homepage": "https://github.com/Lukkian/bootstrap.lukkian#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.9.3",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^9.0.1",
+    "sass": "^1.38.2",
+    "serve": "^12.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-twbs-bootstrap": "^2.2.3"
+  }
+}
