@@ -52,7 +52,7 @@ jobs:
     - name: Zipping
       uses: papeloto/action-zip@v1
       with:
-        files: publish
+        files: dist
         dest: bootstrap.lukkian.v${{ steps.gitversion.outputs.semVer }}.zip
 
     - name: Create Release
