@@ -2,8 +2,24 @@
  * Customized by Lukkian (https://github.com/Lukkian/bootstrap.lukkian/)
  */
 
-// custom variables
-$primary: #c29938;
+// custom colors
+$cyan: #17a2b8; // using the default value as in bootstrap v4.6.0
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// custom btn-info
+.btn-info {
+    @include button-variant($background: $info, $border: $info, $color: #fff, $hover-color: #fff);
+}
+.btn-outline-info {
+    @include button-outline-variant($color: $info, $color-hover: #fff);
+}
+
+// custom btn-light
+.btn-light {
+    @include button-variant($background: $light, $border: $light, $color: $black, $hover-color: $black, $hover-background: $gray-200);
+}
+.btn-outline-light {
+    @include button-outline-variant($color: $gray-600, $active-background: $gray-200, $color-hover: $black);
+}
