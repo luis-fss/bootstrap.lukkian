@@ -12190,7 +12190,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(58, 176, 195, 0.5);
 }
 .btn-info:disabled, .btn-info.disabled {
-  color: #000;
+  color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
@@ -12208,7 +12208,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.5);
 }
 .btn-check:checked + .btn-outline-info, .btn-check:active + .btn-outline-info, .btn-outline-info:active, .btn-outline-info.active, .btn-outline-info.dropdown-toggle.show {
-  color: #000;
+  color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 }
