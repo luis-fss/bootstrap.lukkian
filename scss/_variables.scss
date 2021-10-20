@@ -1,0 +1,11 @@
+// variable customizations
+
+// bootstrap v5 disabled negative margins by default, so here we re-enable to maintain v4 compatibility
+$enable-negative-margins: true;
+
+// custom colors
+$cyan: #17a2b8; // using the default value as in bootstrap v4.6.0
+
+// custom tooltips
+$tooltip-bg: #0d6efd;
+$tooltip-opacity: .99;
