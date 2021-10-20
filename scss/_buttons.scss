@@ -1,0 +1,17 @@
+// buttons customizations
+
+// custom btn-info
+.btn-info {
+    @include button-variant($background: $info, $border: $info, $color: #fff, $hover-color: #fff, $disabled-color: #fff);
+}
+.btn-outline-info {
+    @include button-outline-variant($color: $info, $active-color: #fff, $color-hover: #fff);
+}
+
+// custom btn-light
+.btn-light {
+    @include button-variant($background: $light, $border: $light, $color: $black, $hover-color: $black, $hover-background: $gray-200);
+}
+.btn-outline-light {
+    @include button-outline-variant($color: $gray-600, $active-background: $gray-200, $color-hover: $black);
+}

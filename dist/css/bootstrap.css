@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /*!
- * Customized by Lukkian (https://github.com/Lukkian/bootstrap.lukkian/)
+ * Bootstrap.lukkian v1.0.7 (https://github.com/Lukkian/bootstrap.lukkian/)
+ * Copyright 2011-2021 Lukkian
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -2814,7 +2818,7 @@ textarea.form-control-lg {
   margin-top: 0.1rem;
   font-size: 0.875rem;
   color: #fff;
-  background-color: rgba(25, 135, 84, 0.9);
+  background-color: rgba(25, 135, 84, 0.99);
   border-radius: 0.25rem;
 }
 
@@ -2903,7 +2907,7 @@ textarea.form-control-lg {
   margin-top: 0.1rem;
   font-size: 0.875rem;
   color: #fff;
-  background-color: rgba(220, 53, 69, 0.9);
+  background-color: rgba(220, 53, 69, 0.99);
   border-radius: 0.25rem;
 }
 
@@ -5761,7 +5765,7 @@ textarea.form-control-lg {
   opacity: 0;
 }
 .tooltip.show {
-  opacity: 0.9;
+  opacity: 0.99;
 }
 .tooltip .tooltip-arrow {
   position: absolute;
@@ -5785,7 +5789,7 @@ textarea.form-control-lg {
 .bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
   top: -1px;
   border-width: 0.4rem 0.4rem 0;
-  border-top-color: #000;
+  border-top-color: #0d6efd;
 }
 
 .bs-tooltip-end, .bs-tooltip-auto[data-popper-placement^=right] {
@@ -5799,7 +5803,7 @@ textarea.form-control-lg {
 .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
   right: -1px;
   border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: #000;
+  border-right-color: #0d6efd;
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[data-popper-placement^=bottom] {
@@ -5811,7 +5815,7 @@ textarea.form-control-lg {
 .bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
   bottom: -1px;
   border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: #000;
+  border-bottom-color: #0d6efd;
 }
 
 .bs-tooltip-start, .bs-tooltip-auto[data-popper-placement^=left] {
@@ -5825,7 +5829,7 @@ textarea.form-control-lg {
 .bs-tooltip-start .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
   left: -1px;
   border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: #000;
+  border-left-color: #0d6efd;
 }
 
 .tooltip-inner {
@@ -5833,7 +5837,7 @@ textarea.form-control-lg {
   padding: 0.25rem 0.5rem;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: #0d6efd;
   border-radius: 0.25rem;
 }
 
