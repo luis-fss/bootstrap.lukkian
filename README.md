@@ -7,3 +7,4 @@
 * Custom `.btn-light` and `.btn-outline-light` colors
 * Custom `tooltips` color and opacity
 * Enable `negative margins`
+* Add `btn-circle{-sm}{-lg}` and `btn-icon-split{-sm}{-lg}`
