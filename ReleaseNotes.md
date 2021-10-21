@@ -1,3 +1,3 @@
 ### Release Notes
 
-* add custom tooltips
+* Add `btn-circle{-sm}{-lg}` and `btn-icon-split{-sm}{-lg}`

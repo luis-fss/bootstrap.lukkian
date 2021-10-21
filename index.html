@@ -28,12 +28,12 @@
       
       <div class="col-sm-12 text-center">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Launch modal
-        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch modal</button>
         <!-- Button trigger offcanvas -->
         <button type="button" class="btn btn-primary m-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
+        <!-- link -->
         <a href="#" class="text-success m-2">Example link</a>
+        <!-- group button -->
         <div class="btn-group m-2" role="group" aria-label="Basic mixed styles example">
           <button type="button" class="btn btn-danger">Left</button>
           <button type="button" class="btn btn-warning">Middle</button>
@@ -41,6 +41,7 @@
         </div>
       </div>
       
+      <!-- checks and radio buttons -->
       <div class="col-sm-12 text-center">
         <div class="btn-group m-2" role="group" aria-label="Basic checkbox toggle button group">
           <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
@@ -60,6 +61,7 @@
         </div>
       </div>
 
+      <!-- tooltips -->
       <div class="col-sm-12 text-center">
         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
           Tooltip on top
@@ -75,6 +77,7 @@
         </button>
       </div>
       
+      <!-- dropdown buttons -->
       <div class="col-sm-12 text-center">
         <div class="btn-group m-2">
           <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -174,6 +177,7 @@
         </div>
       </div>
       
+      <!-- dropdown outlined buttons -->
       <div class="col-sm-12 text-center">
         <div class="btn-group m-2">
           <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -273,6 +277,7 @@
         </div>
       </div>
 
+      <!-- buttons -->
       <div class="col-sm-12 text-center">
         <button type="button" class="btn btn-primary m-2">primary button</button>
         <button type="button" class="btn btn-secondary m-2">secondary button</button>
@@ -284,6 +289,7 @@
         <button type="button" class="btn btn-dark m-2">dark button</button>
       </div>
 
+      <!-- outlined buttons -->
       <div class="col-sm-12 text-center">
         <button type="button" class="btn btn-outline-primary m-2">primary button</button>
         <button type="button" class="btn btn-outline-secondary m-2">secondary button</button>
@@ -295,6 +301,7 @@
         <button type="button" class="btn btn-outline-dark m-2">dark button</button>
       </div>
 
+      <!-- disabled buttons -->
       <div class="col-sm-12 text-center">
         <button type="button" disabled class="btn btn-primary m-2">primary button</button>
         <button type="button" disabled class="btn btn-secondary m-2">secondary button</button>
@@ -306,6 +313,7 @@
         <button type="button" disabled class="btn btn-dark m-2">dark button</button>
       </div>
 
+      <!-- outlined disabled buttons -->
       <div class="col-sm-12 text-center">
         <button type="button" disabled class="btn btn-outline-primary m-2">primary button</button>
         <button type="button" disabled class="btn btn-outline-secondary m-2">secondary button</button>
@@ -317,12 +325,14 @@
         <button type="button" disabled class="btn btn-outline-dark m-2">dark button</button>
       </div>
 
+      <!-- progress -->
       <div class="col-sm-12">
         <div class="progress">
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
         </div>
       </div>
 
+      <!-- badges -->
       <div class="col-sm-12 text-center">
         <span class="badge bg-primary">Primary</span>
         <span class="badge bg-secondary">Secondary</span>
@@ -334,6 +344,7 @@
         <span class="badge bg-dark">Dark</span>
       </div>
 
+      <!-- spinners -->
       <div class="col-sm-12 text-center">
         <div class="spinner-border text-primary m-2" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -361,53 +372,116 @@
         </div>
       </div>
 
-      <!-- offcanvas -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      <div class="row">
+
+        <!-- btn-icon-split -->
+        <div class="col-sm-6">
+          <div class="card-body">
+            <figure>
+              <blockquote>
+                <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and
+                  the markup in the examples below. The examples below also use the
+                  <code>.text-white-50</code> helper class on the icons for additional styling,
+                  but it is not required.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Credit: <cite title="Start Bootstrap - SB Admin 2"><a href="https://github.com/StartBootstrap/startbootstrap-sb-admin-2" target="_blank">Start Bootstrap - SB Admin 2</a></cite>
+              </figcaption>
+            </figure>
+            <a href="#" class="btn btn-primary btn-icon-split">
+                <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
+                <span class="text">Split Button Primary</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-success btn-icon-split">
+                <span class="icon text-white-50"><i class="bi bi-check"></i></span>
+                <span class="text">Split Button Success</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-info btn-icon-split">
+                <span class="icon text-white-50"><i class="bi bi-info-circle"></i></span>
+                <span class="text">Split Button Info</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-warning btn-icon-split">
+                <span class="icon text-white-50"><i class="bi bi-exclamation-triangle"></i></span>
+                <span class="text">Split Button Warning</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-danger btn-icon-split">
+                <span class="icon text-white-50"><i class="bi bi-trash"></i></span>
+                <span class="text">Split Button Danger</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-secondary btn-icon-split">
+                <span class="icon text-white-50"><i class="bi bi-arrow-right"></i></span>
+                <span class="text">Split Button Secondary</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-light btn-icon-split">
+                <span class="icon text-gray-600"><i class="bi bi-arrow-right"></i></span>
+                <span class="text">Split Button Light</span>
+            </a>
+            <div class="mb-4"></div>
+            <p>Also works with small and large button classes!</p>
+            <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
+                <span class="text">Split Button Small</span>
+            </a>
+            <div class="my-2"></div>
+            <a href="#" class="btn btn-primary btn-icon-split btn-lg">
+                <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
+                <span class="text">Split Button Large</span>
+            </a>
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+        </div>
+
+        <!-- btn-circle -->
+        <div class="col-sm-6">
+          <div class="card-body">
+            <figure>
+              <blockquote>
+                <p>Use Bootstrap Icons along with the circle buttons as shown in the examples below!</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Credit: <cite title="Start Bootstrap - SB Admin 2"><a href="https://github.com/StartBootstrap/startbootstrap-sb-admin-2" target="_blank">Start Bootstrap - SB Admin 2</a></cite>
+              </figcaption>
+            </figure>
+            <!-- Circle Buttons (Small) -->
+            <div class="mb-3 mt-3"><code>.btn-circle .btn-sm</code></div>
+            <a href="#" class="btn btn-primary btn-circle btn-sm"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-success btn-circle btn-sm"><i class="bi bi-check"></i></a>
+            <a href="#" class="btn btn-info btn-circle btn-sm"><i class="bi bi-info-circle"></i></a>
+            <a href="#" class="btn btn-warning btn-circle btn-sm"><i class="bi bi-exclamation-triangle"></i></a>
+            <a href="#" class="btn btn-danger btn-circle btn-sm"><i class="bi bi-trash"></i></a>
+            <a href="#" class="btn btn-dark btn-circle btn-sm">99</i></a>
+            <!-- Circle Buttons (Default) -->
+            <div class="mb-3 mt-3"><code>.btn-circle</code></div>
+            <a href="#" class="btn btn-primary btn-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-success btn-circle"><i class="bi bi-check"></i></a>
+            <a href="#" class="btn btn-info btn-circle"><i class="bi bi-info-circle"></i></a>
+            <a href="#" class="btn btn-warning btn-circle"><i class="bi bi-exclamation-triangle"></i></a>
+            <a href="#" class="btn btn-danger btn-circle"><i class="bi bi-trash"></i></a>
+            <a href="#" class="btn btn-dark btn-circle">99</i></a>
+            <!-- Circle Buttons (Large) -->
+            <div class="mb-3 mt-3"><code>.btn-circle .btn-lg</code></div>
+            <a href="#" class="btn btn-primary btn-circle btn-lg"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-success btn-circle btn-lg"><i class="bi bi-check"></i></a>
+            <a href="#" class="btn btn-info btn-circle btn-lg"><i class="bi bi-info-circle"></i></a>
+            <a href="#" class="btn btn-warning btn-circle btn-lg"><i class="bi bi-exclamation-triangle"></i></a>
+            <a href="#" class="btn btn-danger btn-circle btn-lg"><i class="bi bi-trash"></i></a>
+            <a href="#" class="btn btn-dark btn-circle btn-lg">99</i></a>
           </div>
         </div>
       </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="my-5 w-25 mx-0">
+      <hr class="mt-5 mb-4">
 
       <div class="row">
+
+        <!-- bootstrap-icons -->
         <div class="col-md-6">
-          <h2>Adding Bootstrap Icons</h2>
+          <h2>Bootstrap Icons</h2>
           <p><a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> are included with the web font here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too. They're styleable with text utilities and more.</p>
 
           <i class="bi bi-heart-fill fs-2 text-primary"></i>
@@ -419,7 +493,8 @@
           <i class="bi bi-heart-fill fs-2 text-light"></i>
           <i class="bi bi-heart-fill fs-2 text-dark"></i>
         </div>
-
+        
+        <!-- documentation -->
         <div class="col-md-6">
           <h2>Guides</h2>
           <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
@@ -431,10 +506,48 @@
           </ul>
         </div>
       </div>
+    </div>
+    
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      <hr class="mt-5 mb-4">
-
-      <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
