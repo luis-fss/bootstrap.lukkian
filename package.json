@@ -1,6 +1,6 @@
 {
   "name": "bootstrap.lukkian",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "My bootstrap customizations.",
   "main": "index.js",
   "scripts": {
