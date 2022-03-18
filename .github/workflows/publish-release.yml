@@ -16,13 +16,13 @@ jobs:
         fetch-depth: 0 # Number of commits to fetch. 0 indicates all history for all branches and tags. Default: 1
 
     - name: Setup GitVersion 5.7.x
-      uses: gittools/actions/gitversion/setup@v0.9.10
+      uses: gittools/actions/gitversion/setup@v0.9.13
       with:
         versionSpec: '5.7.x'
     
     - name: Execute GitVersion
       id: gitversion
-      uses: gittools/actions/gitversion/execute@v0.9.10
+      uses: gittools/actions/gitversion/execute@v0.9.13
 
     - name: Print app version
       run: |
