@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Bootstrap.lukkian v5.2.101 (https://github.com/Lukkian/bootstrap.lukkian/)
+ * Bootstrap.lukkian v5.2.102 (https://github.com/Lukkian/bootstrap.lukkian/)
  * Copyright 2011-2022 Lukkian
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -11655,6 +11655,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #17a2b8;
   --bs-btn-disabled-border-color: #17a2b8;
+}
+
+.btn-outline-info {
+  --bs-btn-color: #17a2b8;
+  --bs-btn-border-color: #17a2b8;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #17a2b8;
+  --bs-btn-hover-border-color: #17a2b8;
+  --bs-btn-focus-shadow-rgb: 23, 162, 184;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #17a2b8;
+  --bs-btn-active-border-color: #17a2b8;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #17a2b8;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #17a2b8;
+  --bs-gradient: none;
 }
 
 .btn-outline-light {

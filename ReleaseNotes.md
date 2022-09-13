@@ -1,3 +1,3 @@
 ### Release Notes
 
-* Update to Bootstrap v5.2.1
+* Fix `.btn-outline-info` foreground color on hover
