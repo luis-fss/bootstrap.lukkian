@@ -1,4 +1,3 @@
 ### Release Notes
 
-* Add `btn-circle{-sm}{-lg}` and `btn-icon-split{-sm}{-lg}`
-* Fix version number
+* Update to Bootstrap v5.2.1

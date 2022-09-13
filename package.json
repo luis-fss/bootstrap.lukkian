@@ -1,6 +1,6 @@
 {
   "name": "bootstrap.lukkian",
-  "version": "1.0.11",
+  "version": "5.2.101",
   "description": "My bootstrap customizations.",
   "main": "index.js",
   "scripts": {
@@ -30,19 +30,19 @@
   },
   "homepage": "https://github.com/Lukkian/bootstrap.lukkian#readme",
   "dependencies": {
-    "@popperjs/core": "^2.9.3",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.6.0"
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.3",
-    "nodemon": "^2.0.12",
+    "autoprefixer": "^10.4.9",
+    "nodemon": "^2.0.19",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^9.0.1",
-    "sass": "^1.38.2",
-    "serve": "^12.0.0",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.54.9",
+    "serve": "^12.0.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-twbs-bootstrap": "^2.2.3"
+    "stylelint-config-twbs-bootstrap": "^2.2.4"
   }
 }
