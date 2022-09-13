@@ -8,7 +8,7 @@
 //     @include button-outline-variant($color: $info, $active-color: #fff, $color-hover: #fff);
 // }
 
-// custom btn-light with a better contrast
+// custom btn-light with better contrast
 .btn-outline-light {
     @include button-outline-variant($color: $gray-600, $active-background: $gray-200, $color-hover: $black);
 }
