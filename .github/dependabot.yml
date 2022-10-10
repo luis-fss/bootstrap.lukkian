@@ -1,10 +1,20 @@
-# Set update schedule for GitHub Actions
-
 version: 2
 updates:
 
   - package-ecosystem: "github-actions"
+    target-branch: "develop"
     directory: "/"
     schedule:
-      # Check for updates to GitHub Actions every weekday
+      interval: "daily"
+      
+  - package-ecosystem: "npm"
+    target-branch: "develop"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "nuget"
+    target-branch: "develop"
+    directory: "/"
+    schedule:
       interval: "daily"
