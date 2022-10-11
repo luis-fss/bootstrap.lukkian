@@ -1,6 +1,6 @@
 {
   "name": "bootstrap.lukkian",
-  "version": "5.2.200",
+  "version": "5.2.201",
   "description": "My bootstrap customizations. (see README.md)",
   "main": "index.js",
   "scripts": {
