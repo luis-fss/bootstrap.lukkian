@@ -1,11 +1,14 @@
 // variable customizations
+// fusv-disable
 
 // bootstrap v5 disabled negative margins by default, so here we re-enable to maintain v4 compatibility
-$enable-negative-margins: true;
+$enable-negative-margins: true !default;
 
-// custom colors
-$cyan: #17a2b8; // Bootstrap 4 cyan
+// customized colors
+$cyan: #17a2b8 !default; // Bootstrap 4 cyan
 
-// custom tooltips
-$tooltip-bg: #0d6efd;
-$tooltip-opacity: .99;
+// customized tooltips
+$tooltip-bg: #0d6efd !default;
+$tooltip-opacity: .99 !default;
+
+// fusv-enable
