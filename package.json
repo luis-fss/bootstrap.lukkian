@@ -1,6 +1,6 @@
 {
   "name": "bootstrap.lukkian",
-  "version": "5.2.201",
+  "version": "5.2.202",
   "description": "My bootstrap customizations. (see README.md)",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "css-compile": "npm-run-all --parallel css-compile-expanded css-compile-compressed",
     "css-compile-compressed": "sass --style compressed --embed-sources --no-error-css scss/bootstrap.scss:dist/css/bootstrap.min.css",
     "css-compile-expanded": "sass --style expanded --embed-sources --no-error-css scss/:dist/css/",
-    "css-lint": "stylelint scss/",
+    "css-lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint-*",
+    "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache --rd",
+    "css-lint-vars": "fusv scss/",
     "css-prefix": "postcss --replace dist/css/*.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix",
     "server": "serve --listen 3000",
@@ -42,6 +44,7 @@
     "postcss-cli": "^10.0.0",
     "sass": "^1.55.0",
     "serve": "^14.0.1",
+    "find-unused-sass-variables": "^4.0.4",
     "stylelint": "^14.13.0",
     "stylelint-config-twbs-bootstrap": "^6.0.0"
   }

@@ -1,3 +1,5 @@
 **/*.min.css
 **/dist/
-node_modules
+**/vendor/
+/_site/
+/js/coverage/

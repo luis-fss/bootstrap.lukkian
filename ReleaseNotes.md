@@ -1,3 +1,3 @@
 ### Release Notes
 
-* Fix `.btn-outline-info` foreground color on hover
+* Internal fix and updates
