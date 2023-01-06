@@ -1,3 +1,0 @@
-ignore-failures:
-  javascript:
-    - npm-run-all
