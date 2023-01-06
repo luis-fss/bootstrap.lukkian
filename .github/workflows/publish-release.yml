@@ -18,7 +18,7 @@ jobs:
     - name: Setup GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.15
       with:
-        versionSpec: '5.10.x'
+        versionSpec: '5.x'
     
     - name: Execute GitVersion
       id: gitversion
@@ -31,7 +31,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3.6.0
       with:
-        node-version: '16.x'
+        node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
         cache: npm
 
