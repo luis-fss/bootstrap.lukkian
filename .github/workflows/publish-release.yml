@@ -11,27 +11,27 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3.1.0
+      uses: actions/checkout@v3.3.0
       with:
         fetch-depth: 0 # Number of commits to fetch. 0 indicates all history for all branches and tags. Default: 1
 
     - name: Setup GitVersion
-      uses: gittools/actions/gitversion/setup@v0.9.13
+      uses: gittools/actions/gitversion/setup@v0.9.15
       with:
-        versionSpec: '5.10.x'
+        versionSpec: '5.x'
     
     - name: Execute GitVersion
       id: gitversion
-      uses: gittools/actions/gitversion/execute@v0.9.13
+      uses: gittools/actions/gitversion/execute@v0.9.15
 
     - name: Print app version
       run: |
         echo "InformationalVersion: ${{ steps.gitversion.outputs.informationalVersion }}"
         
     - name: Set up Node.js
-      uses: actions/setup-node@v3.5.0
+      uses: actions/setup-node@v3.6.0
       with:
-        node-version: '16.x'
+        node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
         cache: npm
 
