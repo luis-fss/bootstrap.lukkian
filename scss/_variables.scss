@@ -1,5 +1,6 @@
 // variable customizations
 // fusv-disable
+// find-unused-sass-variables
 
 // bootstrap v5 disabled negative margins by default, so here we re-enable to maintain v4 compatibility
 $enable-negative-margins: true !default;
@@ -12,3 +13,4 @@ $tooltip-bg: #0d6efd !default;
 $tooltip-opacity: .99 !default;
 
 // fusv-enable
+// find-unused-sass-variables
