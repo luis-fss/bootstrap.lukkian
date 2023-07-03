@@ -46,6 +46,6 @@
     "sass": "^1.57.1",
     "serve": "^14.1.2",
     "stylelint": "^15.2.0",
-    "stylelint-config-twbs-bootstrap": "^10.0.0"
+    "stylelint-config-twbs-bootstrap": "^11.0.0"
   }
 }
