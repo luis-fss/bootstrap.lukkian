@@ -1,576 +1,629 @@
 <!doctype html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <title>Bootstrap npm starter</title>
-  </head>
-  <body>
-    <div class="col-md-8 py-4 px-3 mx-auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <title>bootstrap.lukkian</title>
+</head>
+<body>
+<div class="col-md-8 py-4 px-3 mx-auto">
 
-      <header class="d-flex flex-md-row justify-content-md-between align-items-md-center pb-3 mb-5 border-bottom">
-        <h1 class="h4">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-inline-block me-2" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-            <span>bootstrap</span>
-          </a>
-        </h1>
-        <a href="https://github.com/Lukkian/bootstrap.lukkian" target="_blank" rel="noopener">View on GitHub</a>
-      </header>
+  <header class="d-flex flex-md-row justify-content-md-between align-items-md-center pb-3 mb-5 border-bottom">
+    <h1 class="h4">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-inline-block me-2" viewBox="0 0 118 94" role="img">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                fill="currentColor"></path>
+        </svg>
+        <span>bootstrap</span>
+      </a>
+    </h1>
+    <a href="https://github.com/Lukkian/bootstrap.lukkian" target="_blank" rel="noopener">View on GitHub</a>
+  </header>
 
-      <h1>Bootstrap customizations</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-4">You've successfully loaded up the bootstrap.lukkian project! It's loaded up with <a href="https://getbootstrap.com/docs/" target="_blank" rel="noopener">Bootstrap 5</a>, <a href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Icons</a>, and tooling for compiling sass to your needs. Based on <a href="https://github.com/twbs/bootstrap-npm-starter" target="_blank" rel="noopener">Bootstrap npm starter template</a>.</p>
-      </div>
-      
-      <div class="col-sm-12 text-center">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch modal</button>
-        <!-- Button trigger offcanvas -->
-        <button type="button" class="btn btn-primary m-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
-        <!-- link -->
-        <a href="#" class="text-success m-2">Example link</a>
-        <!-- group button -->
-        <div class="btn-group m-2" role="group" aria-label="Basic mixed styles example">
-          <button type="button" class="btn btn-danger">Left</button>
-          <button type="button" class="btn btn-warning">Middle</button>
-          <button type="button" class="btn btn-success">Right</button>
-        </div>
-      </div>
-      
-      <!-- checks and radio buttons -->
-      <div class="col-sm-12 text-center">
-        <div class="btn-group m-2" role="group" aria-label="Basic checkbox toggle button group">
-          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>        
-          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>        
-          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
-        </div>
-        <div class="btn-group m-2" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-        </div>
-      </div>
+  <h1>bootstrap.lukkian</h1>
+  <div class="col-lg-8 px-0">
+    <p class="fs-4">You've successfully loaded up the bootstrap.lukkian project! It's loaded up with
+      <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a>,
+      <a href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Icons</a>, and tooling for compiling sass.</p>
+    <p class="fs-6">- based on <a href="https://github.com/twbs/bootstrap-npm-starter" target="_blank" rel="noopener">Bootstrap npm starter template</a>.</p>
+    <p class="fs-5">List of main customizations:</p>
+    <ul>
+      <li>Custom <span class="text-white text-bg-info">info color</span>, same as in Bootstrap 4 (which is more sober and less <span class="text-white" style="background-color: #0dcaf0">enlightened</span>)</li>
+      <li>Custom .btn-info foreground color, white text, the default is black</li>
+      <li>Custom .btn-outline-info foreground color on hover, white text, the default is black</li>
+      <li>Custom .btn-outline-light color, more contrast</li>
+      <li>Custom tooltips color and opacity</li>
+      <li>Enable <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#negative-margin" target="_blank" rel="noopener">negative margin</a></li>
+      <li>Add custom btn-circle{-sm}{-lg} and btn-icon-split{-sm}{-lg}</li>
+    </ul>
+  </div>
 
-      <!-- tooltips -->
-      <div class="col-sm-12 text-center">
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-          Tooltip on top
-        </button>
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
-          Tooltip on right
-        </button>
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
-          Tooltip on bottom
-        </button>
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
-          Tooltip on left
-        </button>
-      </div>
-      
-      <!-- dropdown buttons -->
-      <div class="col-sm-12 text-center">
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- dropdown outlined buttons -->
-      <div class="col-sm-12 text-center">
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group m-2">
-          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- buttons -->
-      <div class="col-sm-12 text-center">
-        <button type="button" class="btn btn-primary m-2">primary button</button>
-        <button type="button" class="btn btn-secondary m-2">secondary button</button>
-        <button type="button" class="btn btn-success m-2">success button</button>
-        <button type="button" class="btn btn-info m-2">info button</button>
-        <button type="button" class="btn btn-warning m-2">warning button</button>
-        <button type="button" class="btn btn-danger m-2">danger button</button>
-        <button type="button" class="btn btn-light m-2">light button</button>
-        <button type="button" class="btn btn-dark m-2">dark button</button>
-      </div>
-
-      <!-- outlined buttons -->
-      <div class="col-sm-12 text-center">
-        <button type="button" class="btn btn-outline-primary m-2">primary button</button>
-        <button type="button" class="btn btn-outline-secondary m-2">secondary button</button>
-        <button type="button" class="btn btn-outline-success m-2">success button</button>
-        <button type="button" class="btn btn-outline-info m-2">info button</button>
-        <button type="button" class="btn btn-outline-warning m-2">warning button</button>
-        <button type="button" class="btn btn-outline-danger m-2">danger button</button>
-        <button type="button" class="btn btn-outline-light m-2">light button</button>
-        <button type="button" class="btn btn-outline-dark m-2">dark button</button>
-      </div>
-
-      <!-- disabled buttons -->
-      <div class="col-sm-12 text-center">
-        <button type="button" disabled class="btn btn-primary m-2">primary button</button>
-        <button type="button" disabled class="btn btn-secondary m-2">secondary button</button>
-        <button type="button" disabled class="btn btn-success m-2">success button</button>
-        <button type="button" disabled class="btn btn-info m-2">info button</button>
-        <button type="button" disabled class="btn btn-warning m-2">warning button</button>
-        <button type="button" disabled class="btn btn-danger m-2">danger button</button>
-        <button type="button" disabled class="btn btn-light m-2">light button</button>
-        <button type="button" disabled class="btn btn-dark m-2">dark button</button>
-      </div>
-
-      <!-- outlined disabled buttons -->
-      <div class="col-sm-12 text-center">
-        <button type="button" disabled class="btn btn-outline-primary m-2">primary button</button>
-        <button type="button" disabled class="btn btn-outline-secondary m-2">secondary button</button>
-        <button type="button" disabled class="btn btn-outline-success m-2">success button</button>
-        <button type="button" disabled class="btn btn-outline-info m-2">info button</button>
-        <button type="button" disabled class="btn btn-outline-warning m-2">warning button</button>
-        <button type="button" disabled class="btn btn-outline-danger m-2">danger button</button>
-        <button type="button" disabled class="btn btn-outline-light m-2">light button</button>
-        <button type="button" disabled class="btn btn-outline-dark m-2">dark button</button>
-      </div>
-
-      <!-- progress -->
-      <div class="col-sm-12">
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
-        </div>
-      </div>
-
-      <!-- badges -->
-      <div class="col-sm-12 text-center">
-        <span class="badge bg-primary">Primary</span>
-        <span class="badge bg-secondary">Secondary</span>
-        <span class="badge bg-success">Success</span>
-        <span class="badge bg-danger">Danger</span>
-        <span class="badge bg-warning text-dark">Warning</span>
-        <span class="badge bg-info">Info</span>
-        <span class="badge bg-light text-dark">Light</span>
-        <span class="badge bg-dark">Dark</span>
-      </div>
-
-      <!-- spinners -->
-      <div class="col-sm-12 text-center">
-        <div class="spinner-border text-primary m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-secondary m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-success m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-danger m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-warning m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-info m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-light m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-dark m-2" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <!-- btn-icon-split -->
-        <div class="col-sm-6">
-          <div class="card-body">
-            <figure>
-              <blockquote>
-                <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and
-                  the markup in the examples below. The examples below also use the
-                  <code>.text-white-50</code> helper class on the icons for additional styling,
-                  but it is not required.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                Credit: <cite title="Start Bootstrap - SB Admin 2"><a href="https://github.com/StartBootstrap/startbootstrap-sb-admin-2" target="_blank" rel="noopener">Start Bootstrap - SB Admin 2</a></cite>
-              </figcaption>
-            </figure>
-            <a href="#" class="btn btn-primary btn-icon-split">
-                <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
-                <span class="text">Split Button Primary</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-secondary btn-icon-split">
-                <span class="icon text-white-50"><i class="bi bi-arrow-right"></i></span>
-                <span class="text">Split Button Secondary</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-success btn-icon-split">
-                <span class="icon text-white-50"><i class="bi bi-check"></i></span>
-                <span class="text">Split Button Success</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-info btn-icon-split">
-                <span class="icon text-white-50"><i class="bi bi-info-circle"></i></span>
-                <span class="text">Split Button Info</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-warning btn-icon-split">
-                <span class="icon text-white-50"><i class="bi bi-exclamation-triangle"></i></span>
-                <span class="text">Split Button Warning</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-danger btn-icon-split">
-                <span class="icon text-white-50"><i class="bi bi-trash"></i></span>
-                <span class="text">Split Button Danger</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-light btn-icon-split">
-                <span class="icon text-gray-600"><i class="bi bi-arrow-right"></i></span>
-                <span class="text">Split Button Light</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-dark btn-icon-split">
-                <span class="icon text-gray-600"><i class="bi bi-arrow-right"></i></span>
-                <span class="text">Split Button Dark</span>
-            </a>
-            <div class="mb-4"></div>
-            <p>Also works with small and large button classes!</p>
-            <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
-                <span class="text">Split Button Small</span>
-            </a>
-            <div class="my-2"></div>
-            <a href="#" class="btn btn-primary btn-icon-split btn-lg">
-                <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
-                <span class="text">Split Button Large</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- btn-circle -->
-        <div class="col-sm-6">
-          <div class="card-body">
-            <figure>
-              <blockquote>
-                <p>Use Bootstrap Icons along with the circle buttons as shown in the examples below!</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                Credit: <cite title="Start Bootstrap - SB Admin 2"><a href="https://github.com/StartBootstrap/startbootstrap-sb-admin-2" target="_blank" rel="noopener">Start Bootstrap - SB Admin 2</a></cite>
-              </figcaption>
-            </figure>
-            <!-- Circle Buttons (Small) -->
-            <div class="mb-3 mt-3"><code>.btn-circle .btn-sm</code></div>
-            <a href="#" class="btn btn-primary btn-circle btn-sm"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="btn btn-secondary btn-circle btn-sm"><i class="bi bi-flag"></i></a>
-            <a href="#" class="btn btn-success btn-circle btn-sm"><i class="bi bi-check"></i></a>
-            <a href="#" class="btn btn-info btn-circle btn-sm"><i class="bi bi-info-circle"></i></a>
-            <a href="#" class="btn btn-warning btn-circle btn-sm"><i class="bi bi-exclamation-triangle"></i></a>
-            <a href="#" class="btn btn-danger btn-circle btn-sm"><i class="bi bi-trash"></i></a>
-            <a href="#" class="btn btn-light btn-circle btn-sm">00</a>
-            <a href="#" class="btn btn-dark btn-circle btn-sm">99</a>
-            <!-- Circle Buttons (Default) -->
-            <div class="mb-3 mt-3"><code>.btn-circle</code></div>
-            <a href="#" class="btn btn-primary btn-circle"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="btn btn-secondary btn-circle"><i class="bi bi-flag"></i></a>
-            <a href="#" class="btn btn-success btn-circle"><i class="bi bi-check"></i></a>
-            <a href="#" class="btn btn-info btn-circle"><i class="bi bi-info-circle"></i></a>
-            <a href="#" class="btn btn-warning btn-circle"><i class="bi bi-exclamation-triangle"></i></a>
-            <a href="#" class="btn btn-danger btn-circle"><i class="bi bi-trash"></i></a>
-            <a href="#" class="btn btn-light btn-circle">00</a>
-            <a href="#" class="btn btn-dark btn-circle">99</a>
-            <!-- Circle Buttons (Large) -->
-            <div class="mb-3 mt-3"><code>.btn-circle .btn-lg</code></div>
-            <a href="#" class="btn btn-primary btn-circle btn-lg"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="btn btn-secondary btn-circle btn-lg"><i class="bi bi-flag"></i></a>
-            <a href="#" class="btn btn-success btn-circle btn-lg"><i class="bi bi-check"></i></a>
-            <a href="#" class="btn btn-info btn-circle btn-lg"><i class="bi bi-info-circle"></i></a>
-            <a href="#" class="btn btn-warning btn-circle btn-lg"><i class="bi bi-exclamation-triangle"></i></a>
-            <a href="#" class="btn btn-danger btn-circle btn-lg"><i class="bi bi-trash"></i></a>
-            <a href="#" class="btn btn-light btn-circle btn-lg">00</a>
-            <a href="#" class="btn btn-dark btn-circle btn-lg">99</a>
-          </div>
-        </div>
-      </div>
-
-      <hr class="mt-5 mb-4">
-
-      <div class="row">
-
-        <!-- bootstrap-icons -->
-        <div class="col-md-6">
-          <h2>Bootstrap Icons</h2>
-          <p><a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> are included with the web font here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too. They're styleable with text utilities and more.</p>
-
-          <i class="bi bi-heart-fill fs-2 text-primary"></i>
-          <i class="bi bi-heart-fill fs-2 text-secondary"></i>
-          <i class="bi bi-heart-fill fs-2 text-success"></i>
-          <i class="bi bi-heart-fill fs-2 text-info"></i>
-          <i class="bi bi-heart-fill fs-2 text-warning"></i>
-          <i class="bi bi-heart-fill fs-2 text-danger"></i>
-          <i class="bi bi-heart-fill fs-2 text-light"></i>
-          <i class="bi bi-heart-fill fs-2 text-dark"></i>
-        </div>
-        
-        <!-- documentation -->
-        <div class="col-md-6">
-          <h2>Guides</h2>
-          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-          <ul class="icon-list">
-            <li><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap quick start guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/5.1/getting-started/webpack/">Bootstrap Webpack guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/5.1/getting-started/parcel/">Bootstrap Parcel guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/5.1/getting-started/build-tools/">Contributing to Bootstrap</a></li>
-          </ul>
-        </div>
-      </div>
+  <div class="col-sm-12 text-center">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch modal</button>
+    <!-- Button trigger offcanvas -->
+    <button type="button" class="btn btn-primary m-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Toggle offcanvas</button>
+    <!-- link -->
+    <a href="#" onclick="return false;" class="text-success m-2">Example link</a>
+    <!-- group button -->
+    <div class="btn-group m-2" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn btn-danger">Left</button>
+      <button type="button" class="btn btn-warning">Middle</button>
+      <button type="button" class="btn btn-success">Right</button>
     </div>
-    
-    <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
+  </div>
+
+  <!-- checks and radio buttons -->
+  <div class="col-sm-12 text-center">
+    <div class="btn-group m-2" role="group" aria-label="Basic checkbox toggle button group">
+      <input type="checkbox" class="btn-check" id="btn_check_1" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btn_check_1">Checkbox 1</label>
+      <input type="checkbox" class="btn-check" id="btn_check_2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btn_check_2">Checkbox 2</label>
+      <input type="checkbox" class="btn-check" id="btn_check_3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btn_check_3">Checkbox 3</label>
+    </div>
+    <div class="btn-group m-2" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btn_radio" id="btn_radio_1" autocomplete="off" checked>
+      <label class="btn btn-outline-primary" for="btn_radio_1">Radio 1</label>
+      <input type="radio" class="btn-check" name="btn_radio" id="btn_radio_2" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btn_radio_2">Radio 2</label>
+      <input type="radio" class="btn-check" name="btn_radio" id="btn_radio_3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btn_radio_3">Radio 3</label>
+    </div>
+  </div>
+
+  <!-- tooltips -->
+  <div class="col-sm-12 text-center">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+      Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+      Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+      Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+      Tooltip on left
+    </button>
+  </div>
+
+  <!-- dropdown buttons -->
+  <div class="col-sm-12 text-center">
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- dropdown outlined buttons -->
+  <div class="col-sm-12 text-center">
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group m-2">
+      <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- buttons -->
+  <div class="col-sm-12 text-center">
+    <button type="button" class="btn btn-primary m-2">primary button</button>
+    <button type="button" class="btn btn-secondary m-2">secondary button</button>
+    <button type="button" class="btn btn-success m-2">success button</button>
+    <button type="button" class="btn btn-info m-2">info button</button>
+    <button type="button" class="btn btn-warning m-2">warning button</button>
+    <button type="button" class="btn btn-danger m-2">danger button</button>
+    <button type="button" class="btn btn-light m-2">light button</button>
+    <button type="button" class="btn btn-dark m-2">dark button</button>
+  </div>
+
+  <!-- outlined buttons -->
+  <div class="col-sm-12 text-center">
+    <button type="button" class="btn btn-outline-primary m-2">primary button</button>
+    <button type="button" class="btn btn-outline-secondary m-2">secondary button</button>
+    <button type="button" class="btn btn-outline-success m-2">success button</button>
+    <button type="button" class="btn btn-outline-info m-2">info button</button>
+    <button type="button" class="btn btn-outline-warning m-2">warning button</button>
+    <button type="button" class="btn btn-outline-danger m-2">danger button</button>
+    <button type="button" class="btn btn-outline-light m-2">light button</button>
+    <button type="button" class="btn btn-outline-dark m-2">dark button</button>
+  </div>
+
+  <!-- disabled buttons -->
+  <div class="col-sm-12 text-center">
+    <button type="button" disabled class="btn btn-primary m-2">primary button</button>
+    <button type="button" disabled class="btn btn-secondary m-2">secondary button</button>
+    <button type="button" disabled class="btn btn-success m-2">success button</button>
+    <button type="button" disabled class="btn btn-info m-2">info button</button>
+    <button type="button" disabled class="btn btn-warning m-2">warning button</button>
+    <button type="button" disabled class="btn btn-danger m-2">danger button</button>
+    <button type="button" disabled class="btn btn-light m-2">light button</button>
+    <button type="button" disabled class="btn btn-dark m-2">dark button</button>
+  </div>
+
+  <!-- outlined disabled buttons -->
+  <div class="col-sm-12 text-center">
+    <button type="button" disabled class="btn btn-outline-primary m-2">primary button</button>
+    <button type="button" disabled class="btn btn-outline-secondary m-2">secondary button</button>
+    <button type="button" disabled class="btn btn-outline-success m-2">success button</button>
+    <button type="button" disabled class="btn btn-outline-info m-2">info button</button>
+    <button type="button" disabled class="btn btn-outline-warning m-2">warning button</button>
+    <button type="button" disabled class="btn btn-outline-danger m-2">danger button</button>
+    <button type="button" disabled class="btn btn-outline-light m-2">light button</button>
+    <button type="button" disabled class="btn btn-outline-dark m-2">dark button</button>
+  </div>
+
+  <!-- progress -->
+  <div class="col-sm-12">
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+    </div>
+  </div>
+
+  <!-- badges -->
+  <div class="col-sm-12 text-center">
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-warning text-dark">Warning</span>
+    <span class="badge bg-info">Info</span>
+    <span class="badge bg-light text-dark">Light</span>
+    <span class="badge bg-dark">Dark</span>
+  </div>
+
+  <!-- spinners -->
+  <div class="col-sm-12 text-center">
+    <div class="spinner-border text-primary m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-secondary m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-success m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-danger m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-info m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-light m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-dark m-2" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- btn-icon-split -->
+    <div class="col-sm-6">
+      <div class="card-body">
+        <figure>
+          <blockquote>
+            <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and
+              the markup in the examples below. The examples below also use the
+              <code>.text-white-50</code> helper class on the icons for additional styling,
+              but it is not required.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Credit: <cite title="Start Bootstrap - SB Admin 2"><a href="https://github.com/StartBootstrap/startbootstrap-sb-admin-2" target="_blank" rel="noopener">Start Bootstrap - SB Admin
+            2</a></cite>
+          </figcaption>
+        </figure>
+        <a href="#" onclick="return false;" class="btn btn-primary btn-icon-split">
+          <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
+          <span class="text">Split Button Primary</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-secondary btn-icon-split">
+          <span class="icon text-white-50"><i class="bi bi-arrow-right"></i></span>
+          <span class="text">Split Button Secondary</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-success btn-icon-split">
+          <span class="icon text-white-50"><i class="bi bi-check"></i></span>
+          <span class="text">Split Button Success</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-info btn-icon-split">
+          <span class="icon text-white-50"><i class="bi bi-info-circle"></i></span>
+          <span class="text">Split Button Info</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-warning btn-icon-split">
+          <span class="icon text-white-50"><i class="bi bi-exclamation-triangle"></i></span>
+          <span class="text">Split Button Warning</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-danger btn-icon-split">
+          <span class="icon text-white-50"><i class="bi bi-trash"></i></span>
+          <span class="text">Split Button Danger</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-light btn-icon-split">
+          <span class="icon text-gray-600"><i class="bi bi-arrow-right"></i></span>
+          <span class="text">Split Button Light</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-dark btn-icon-split">
+          <span class="icon text-gray-600"><i class="bi bi-arrow-right"></i></span>
+          <span class="text">Split Button Dark</span>
+        </a>
+        <div class="mb-4"></div>
+        <p>Also works with small and large button classes!</p>
+        <a href="#" onclick="return false;" class="btn btn-primary btn-icon-split btn-sm">
+          <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
+          <span class="text">Split Button Small</span>
+        </a>
+        <div class="my-2"></div>
+        <a href="#" onclick="return false;" class="btn btn-primary btn-icon-split btn-lg">
+          <span class="icon text-white-50"><i class="bi bi-flag"></i></span>
+          <span class="text">Split Button Large</span>
+        </a>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
+    <!-- btn-circle -->
+    <div class="col-sm-6">
+      <div class="card-body">
+        <figure>
+          <blockquote>
+            <p>Use Bootstrap Icons along with the circle buttons as shown in the examples below!</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Credit: <cite title="Start Bootstrap - SB Admin 2"><a href="https://github.com/StartBootstrap/startbootstrap-sb-admin-2" target="_blank" rel="noopener">Start Bootstrap - SB Admin
+            2</a></cite>
+          </figcaption>
+        </figure>
+        <!-- Circle Buttons (Small) -->
+        <div class="mb-3 mt-3"><code>.btn-circle .btn-sm</code></div>
+        <a href="#" onclick="return false;" class="btn btn-primary btn-circle btn-sm"><i class="bi bi-facebook"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-secondary btn-circle btn-sm"><i class="bi bi-flag"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-success btn-circle btn-sm"><i class="bi bi-check"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-info btn-circle btn-sm"><i class="bi bi-info-circle"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-warning btn-circle btn-sm"><i class="bi bi-exclamation-triangle"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-danger btn-circle btn-sm"><i class="bi bi-trash"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-light btn-circle btn-sm">00</a>
+        <a href="#" onclick="return false;" class="btn btn-dark btn-circle btn-sm">99</a>
+        <!-- Circle Buttons (Default) -->
+        <div class="mb-3 mt-3"><code>.btn-circle</code></div>
+        <a href="#" onclick="return false;" class="btn btn-primary btn-circle"><i class="bi bi-facebook"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-secondary btn-circle"><i class="bi bi-flag"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-success btn-circle"><i class="bi bi-check"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-info btn-circle"><i class="bi bi-info-circle"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-warning btn-circle"><i class="bi bi-exclamation-triangle"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-danger btn-circle"><i class="bi bi-trash"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-light btn-circle">00</a>
+        <a href="#" onclick="return false;" class="btn btn-dark btn-circle">99</a>
+        <!-- Circle Buttons (Large) -->
+        <div class="mb-3 mt-3"><code>.btn-circle .btn-lg</code></div>
+        <a href="#" onclick="return false;" class="btn btn-primary btn-circle btn-lg"><i class="bi bi-facebook"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-secondary btn-circle btn-lg"><i class="bi bi-flag"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-success btn-circle btn-lg"><i class="bi bi-check"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-info btn-circle btn-lg"><i class="bi bi-info-circle"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-warning btn-circle btn-lg"><i class="bi bi-exclamation-triangle"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-danger btn-circle btn-lg"><i class="bi bi-trash"></i></a>
+        <a href="#" onclick="return false;" class="btn btn-light btn-circle btn-lg">00</a>
+        <a href="#" onclick="return false;" class="btn btn-dark btn-circle btn-lg">99</a>
       </div>
     </div>
+  </div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      (function () {
-        document.addEventListener("DOMContentLoaded", function () {     
-          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-          })
-        })
-      })()
-    </script>
-  </body>
+  <hr class="mt-5 mb-4">
+
+  <div class="row">
+
+    <!-- bootstrap-icons -->
+    <div class="col-md-6">
+      <h2>Bootstrap Icons</h2>
+      <p><a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> are included with the web font here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too.
+        They're styleable with text utilities and more.</p>
+
+      <i class="bi bi-heart-fill fs-2 text-primary"></i>
+      <i class="bi bi-heart-fill fs-2 text-secondary"></i>
+      <i class="bi bi-heart-fill fs-2 text-success"></i>
+      <i class="bi bi-heart-fill fs-2 text-info"></i>
+      <i class="bi bi-heart-fill fs-2 text-warning"></i>
+      <i class="bi bi-heart-fill fs-2 text-danger"></i>
+      <i class="bi bi-heart-fill fs-2 text-light"></i>
+      <i class="bi bi-heart-fill fs-2 text-dark"></i>
+    </div>
+
+    <!-- documentation -->
+    <div class="col-md-6">
+      <h2>Guides</h2>
+      <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+      <ul class="icon-list">
+        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap quick start guide</a></li>
+        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/webpack/">Bootstrap Webpack guide</a></li>
+        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/">Bootstrap Parcel guide</a></li>
+        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/build-tools/">Contributing to Bootstrap</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function () {
+    document.addEventListener('DOMContentLoaded', () => {
+      const tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      tooltipTriggerList.map(tooltipTriggerEl => {
+        // noinspection JSUnresolvedReference
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    })
+  })()
+</script>
+</body>
 </html>

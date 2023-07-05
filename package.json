@@ -1,22 +1,25 @@
 {
   "name": "bootstrap.lukkian",
-  "version": "5.2.301",
+  "version": "5.3.0",
   "description": "My bootstrap customizations. (see README.md)",
   "main": "index.js",
   "scripts": {
-    "build": "npm run css",
-    "css-compile": "npm-run-all --parallel css-compile-expanded css-compile-compressed",
-    "css-compile-compressed": "sass --style compressed --embed-sources --no-error-css scss/bootstrap.scss:dist/css/bootstrap.min.css",
-    "css-compile-expanded": "sass --style expanded --embed-sources --no-error-css scss/:dist/css/",
+    "css": "npm-run-all css-compile css-prefix css-minify",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
     "css-lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint-*",
-    "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache --rd",
+    "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
     "css-lint-vars": "fusv scss/",
-    "css-prefix": "postcss --replace dist/css/*.css --use autoprefixer --map",
-    "css": "npm-run-all css-compile css-prefix",
+    "css-minify": "npm-run-all --aggregate-output --parallel css-minify-*",
+    "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\"",
+    "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
+    "css-prefix-main": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint",
+    "test": "npm-run-all lint",
     "server": "serve --listen 3000",
-    "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
-    "test": "npm-run-all css-lint css"
+    "start": "npm-run-all --parallel watch server",
+    "build": "npm run css",
+    "run-all": "npm-run-all lint css"
   },
   "repository": {
     "type": "git",
@@ -32,20 +35,20 @@
   },
   "homepage": "https://github.com/Lukkian/bootstrap.lukkian#readme",
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3"
+    "bootstrap": "^5.3.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap-icons": "^1.10.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "find-unused-sass-variables": "^4.0.5",
-    "nodemon": "^2.0.20",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.20",
+    "clean-css-cli": "^5.6.2",
+    "find-unused-sass-variables": "^5.0.0",
+    "nodemon": "^2.0.22",
+    "npm-run-all2": "^6.0.5",
+    "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.57.1",
-    "serve": "^14.1.2",
-    "stylelint": "^14.16.1",
-    "stylelint-config-twbs-bootstrap": "^7.0.0"
+    "sass": "^1.63.6",
+    "serve": "^14.2.0",
+    "stylelint": "15.9.0",
+    "stylelint-config-twbs-bootstrap": "^11.0.0"
   }
 }
