@@ -2,9 +2,9 @@ name: Test releases and pull-requests
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
   push:
-    branches: [ 'release/**', 'hotfix/**' ]
+    branches: [ 'release/**', 'hotfix/**', 'feature/**' ]
 
 jobs:
   test-releases-and-pull-requests:
