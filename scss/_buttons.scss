@@ -2,70 +2,78 @@
 
 // custom btn-info with white text
 .btn-info {
-    @include button-variant($background: $info, $border: $info, $color: #fff, $hover-color: #fff, $disabled-color: #fff);
+  @include button-variant($background: $info, $border: $info, $color: #fff, $hover-color: #fff, $disabled-color: #fff);
 }
 
 // custom btn-outline-info with white text on hover
 .btn-outline-info {
-    @include button-outline-variant($color: $info, $active-color: #fff, $color-hover: #fff);
+  @include button-outline-variant($color: $info, $active-color: #fff, $color-hover: #fff);
 }
 
 // custom btn-outline-light with better contrast
 .btn-outline-light {
-    @include button-outline-variant($color: $gray-600, $active-background: $gray-200, $color-hover: $black);
+  @include button-outline-variant($color: $gray-600, $active-background: $gray-200, $color-hover: $black);
 }
 
 // add btn-circle
 .btn-circle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    border-radius: 100%;
-    &.btn-sm {
-        width: 1.8rem;
-        height: 1.8rem;
-        font-size: .75rem;
-    }
-    &.btn-lg {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.35rem;
-    }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 100%;
+
+  &.btn-sm {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: .75rem;
+  }
+
+  &.btn-lg {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.35rem;
+  }
 }
 
 // add btn-icon-split
 .btn-icon-split {
-    display: inline-flex;
-    align-items: stretch;
-    justify-content: center;
-    padding: 0;
-    overflow: hidden;
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+
+  .icon {
+    display: inline-block;
+    padding: $btn-padding-y $btn-padding-x;
+    background: fade-out($black, .85);
+  }
+
+  .text {
+    display: inline-block;
+    padding: $btn-padding-y $btn-padding-x;
+  }
+
+  &.btn-sm {
     .icon {
-        display: inline-block;
-        padding: $btn-padding-y $btn-padding-x;
-        background: fade-out($black, .85);
+      padding: $btn-padding-y-sm $btn-padding-x-sm;
     }
+
     .text {
-        display: inline-block;
-        padding: $btn-padding-y $btn-padding-x;
+      padding: $btn-padding-y-sm $btn-padding-x-sm;
     }
-    &.btn-sm {
-        .icon {
-            padding: $btn-padding-y-sm $btn-padding-x-sm;
-        }
-        .text {
-            padding: $btn-padding-y-sm $btn-padding-x-sm;
-        }
+  }
+
+  &.btn-lg {
+    .icon {
+      padding: $btn-padding-y-lg $btn-padding-x-lg;
     }
-    &.btn-lg {
-        .icon {
-            padding: $btn-padding-y-lg $btn-padding-x-lg;
-        }
-        .text {
-            padding: $btn-padding-y-lg $btn-padding-x-lg;
-        }
+
+    .text {
+      padding: $btn-padding-y-lg $btn-padding-x-lg;
     }
+  }
 }
